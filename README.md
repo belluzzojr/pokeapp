@@ -18,4 +18,4 @@ practice API usage knowledge. Designer made by me. I researched some already mad
 
 | Technologies | Status |
 |---|---|
-| JS, REACT NATIVE, FIGMA | 40% concluded |
+| JS, REACT NATIVE, FIGMA | 70% concluded |
