@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import PokedexView from './View'
-import { FlatList, View, Image, Text, TouchableOpacity } from 'react-native';
+import { FlatList, View, Image, Text, TouchableOpacity, Modal } from 'react-native';
 import { styles } from './Styles';
 import { AntDesign } from '@expo/vector-icons'; 
 
@@ -43,11 +43,17 @@ export default function PokedexController(){
 
     const  PokemonShow = (item) => {
 
-            const { name, url } = item.item
+            const { name, url} = item.item
+
+            const id = url.replace('https://pokeapi.co/api/v2/pokemon/', '').replace('/', '')
 
             const pokeNumber = url.replace('https://pokeapi.co/api/v2/pokemon/', '').replace('/', '')
             const imgUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+ pokeNumber + '.png'
 
+            const modal = () => {
+                setModalView(true)
+            }
+            
             return (
             <View style={styles.pokemon}>
                 <Image
@@ -57,10 +63,10 @@ export default function PokedexController(){
                     }}
                 />
                     <View style={styles.configinfo}>
-                    <Text style={styles.info}>#000</Text>
+                    <Text style={styles.info}>#0{id}</Text>
                     <Text style={styles.info}>{name.toUpperCase()}</Text>
                     </View>
-                <TouchableOpacity style={styles.goinfo}>
+                <TouchableOpacity style={styles.goinfo} onPress={modal}>
                     <AntDesign name="infocirlceo" size={22} color="white" />
                 </TouchableOpacity>
             </View>

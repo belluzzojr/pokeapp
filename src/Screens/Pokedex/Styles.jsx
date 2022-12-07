@@ -86,4 +86,11 @@ export const styles = StyleSheet.create({
         transform: [{translateY: 40}],
         position: 'absolute',
     },
+    //modal
+    modal:{
+        flex: 1,
+        backgroundColor: 'white',
+        height: '100%',
+        width: '100%'
+    }
 })

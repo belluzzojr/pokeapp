@@ -3,7 +3,6 @@ import { View , Image, TextInput } from 'react-native'
 
 export default function PokedexView( {styles, PokemonList} ){
 
-    const [value, onChangeValue] = useState("Search Pokemon")
 
     return (
             <View style={styles.container}>
@@ -11,10 +10,6 @@ export default function PokedexView( {styles, PokemonList} ){
                     <Image
                     source={require('../../../assets/utils/logo.png')}
                     style={styles.logo}/>
-                    <TextInput
-                    style={styles.search}
-                    value={value}
-                    />
                 </View>
                 <PokemonList/>
             </View>
