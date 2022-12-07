@@ -11,7 +11,7 @@ practice API usage knowledge. Designer made by me. I researched some already mad
 <p>COMING SOON...</p>
 
 <h2> API PROJECT </h1>
-<p>COMING SOON...</p>
+<p> https://pokeapi.co/ </p>
 
 
 <h2> About the project </h1>
