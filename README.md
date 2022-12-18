@@ -1,7 +1,7 @@
 <h1 align="center">PokedexAPP</h1>
 
 <div center>
-<img src="https://user-images.githubusercontent.com/98968823/199083616-d730dc87-30e1-4a4d-bbc4-f26849628341.png" width="100%" />
+<img src="https://user-images.githubusercontent.com/98968823/208318487-f7fa0fe9-34a2-41bd-bfb7-f4711470f613.png" width="100%" />
   </div>
 
 <p> The Pokedex APP is a small app I developed for
